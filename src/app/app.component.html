@@ -1,3 +1,5 @@
+<app-header></app-header>
+
 <h1>Angular learning by me....</h1>
 <p>x + y</p>
 
@@ -5,4 +7,14 @@
 <p>{{ x + y }}</p>
 
 <h1>{{ "I am here".toUpperCase() }}</h1>
+<h1>{{ message }}</h1>
+
+<img [src]="imageUrl" />
+
+<button (click)="handleClick()">Click Me!!!</button>
+
+<!-- <h2 *ngIf="isVisible">asdfsadf</h2> -->
+
+<input [(ngModel)]="username" placeholder="Enter your name" />
+<p>Welcome, {{ username }}</p>
 <app-login></app-login>
